@@ -1,0 +1,41 @@
+<template>
+    <v-bottom-navigation app>
+    <v-btn value="recent" @click= "$router.push('/books')">
+      <span>Books</span>
+
+      <v-icon>mdi-bookshelf</v-icon>
+    </v-btn>
+
+    <v-btn value="favorites" @click= "$router.push('/authors')">
+      <span>Authors</span>
+
+      <v-icon>mdi-badge-account</v-icon>
+    </v-btn>
+
+    <v-btn value="nearby" @click= "$router.push('/members')">
+      <span>Members</span>
+
+      <v-icon>mdi-account</v-icon>
+    </v-btn>
+    <v-btn value="nearby" @click= "$router.push('/issues')">
+      <span>Issued Books</span>
+
+      <v-icon>mdi-account-box-multiple</v-icon>
+    </v-btn>
+    <v-btn value="nearby" @click= "$router.push('/categories')">
+      <span>Categories</span>
+
+      <v-icon>mdi-account-details</v-icon>
+    </v-btn>
+  </v-bottom-navigation>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+
+<style lang="scss" scoped>
+
+</style>
